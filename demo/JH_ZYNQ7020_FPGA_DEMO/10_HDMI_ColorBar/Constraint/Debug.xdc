@@ -1,0 +1,42 @@
+create_debug_core u_ila_0 ila
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_DATA_DEPTH 4096 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property port_width 1 [get_debug_ports u_ila_0/clk]
+connect_debug_port u_ila_0/clk [get_nets [list clk_wiz_0/inst/clk_out1]]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+set_property port_width 11 [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {pixel_xpos_w[0]} {pixel_xpos_w[1]} {pixel_xpos_w[2]} {pixel_xpos_w[3]} {pixel_xpos_w[4]} {pixel_xpos_w[5]} {pixel_xpos_w[6]} {pixel_xpos_w[7]} {pixel_xpos_w[8]} {pixel_xpos_w[9]} {pixel_xpos_w[10]}]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+set_property port_width 11 [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {pixel_ypos_w[0]} {pixel_ypos_w[1]} {pixel_ypos_w[2]} {pixel_ypos_w[3]} {pixel_ypos_w[4]} {pixel_ypos_w[5]} {pixel_ypos_w[6]} {pixel_ypos_w[7]} {pixel_ypos_w[8]} {pixel_ypos_w[9]} {pixel_ypos_w[10]}]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+set_property port_width 24 [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {video_rgb[0]} {video_rgb[1]} {video_rgb[2]} {video_rgb[3]} {video_rgb[4]} {video_rgb[5]} {video_rgb[6]} {video_rgb[7]} {video_rgb[8]} {video_rgb[9]} {video_rgb[10]} {video_rgb[11]} {video_rgb[12]} {video_rgb[13]} {video_rgb[14]} {video_rgb[15]} {video_rgb[16]} {video_rgb[17]} {video_rgb[18]} {video_rgb[19]} {video_rgb[20]} {video_rgb[21]} {video_rgb[22]} {video_rgb[23]}]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+set_property port_width 24 [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list {pixel_data_w[0]} {pixel_data_w[1]} {pixel_data_w[2]} {pixel_data_w[3]} {pixel_data_w[4]} {pixel_data_w[5]} {pixel_data_w[6]} {pixel_data_w[7]} {pixel_data_w[8]} {pixel_data_w[9]} {pixel_data_w[10]} {pixel_data_w[11]} {pixel_data_w[12]} {pixel_data_w[13]} {pixel_data_w[14]} {pixel_data_w[15]} {pixel_data_w[16]} {pixel_data_w[17]} {pixel_data_w[18]} {pixel_data_w[19]} {pixel_data_w[20]} {pixel_data_w[21]} {pixel_data_w[22]} {pixel_data_w[23]}]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4]
+set_property port_width 1 [get_debug_ports u_ila_0/probe4]
+connect_debug_port u_ila_0/probe4 [get_nets [list video_de]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe5]
+set_property port_width 1 [get_debug_ports u_ila_0/probe5]
+connect_debug_port u_ila_0/probe5 [get_nets [list video_hs]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe6]
+set_property port_width 1 [get_debug_ports u_ila_0/probe6]
+connect_debug_port u_ila_0/probe6 [get_nets [list video_vs]]
+set_property C_CLK_INPUT_FREQ_HZ 75000000 [get_debug_cores dbg_hub]
+set_property C_ENABLE_CLK_DIVIDER false [get_debug_cores dbg_hub]
+set_property C_USER_SCAN_CHAIN 1 [get_debug_cores dbg_hub]
+connect_debug_port dbg_hub/clk [get_nets pixel_clk]

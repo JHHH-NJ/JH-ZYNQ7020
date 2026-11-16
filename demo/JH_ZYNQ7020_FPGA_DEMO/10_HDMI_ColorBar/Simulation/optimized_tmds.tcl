@@ -1,0 +1,6 @@
+run 564450ns
+open_vcd C:/Users/jhhh/Desktop/demo/JH_ZYNQ7020_FPGA_DEMO/10_HDMI_ColorBar/Simulation/optimized_tmds.vcd
+log_vcd /SIM_TB_HDMI/hdmi_colorbar_top_inst/tmds_clk_p /SIM_TB_HDMI/hdmi_colorbar_top_inst/tmds_clk_n /SIM_TB_HDMI/hdmi_colorbar_top_inst/tmds_data_p /SIM_TB_HDMI/hdmi_colorbar_top_inst/tmds_data_n /SIM_TB_HDMI/hdmi_colorbar_top_inst/video_de /SIM_TB_HDMI/hdmi_colorbar_top_inst/video_hs /SIM_TB_HDMI/hdmi_colorbar_top_inst/video_vs /SIM_TB_HDMI/hdmi_colorbar_top_inst/video_rgb /SIM_TB_HDMI/hdmi_colorbar_top_inst/pixel_data_w /SIM_TB_HDMI/hdmi_colorbar_top_inst/pixel_xpos_w /SIM_TB_HDMI/hdmi_colorbar_top_inst/pixel_ypos_w
+run 100ns
+close_vcd
+quit

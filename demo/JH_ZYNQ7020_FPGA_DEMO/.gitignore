@@ -1,0 +1,17 @@
+**/*.cache/
+**/*.runs/
+**/*.hw/
+**/*.sim/
+**/*.gen/
+**/*.ip_user_files/
+**/.Xil/
+*.jou
+*.log
+*.rpt
+*.rpx
+*.dcp
+*.pb
+*.wdb
+*.wdf
+*.rst
+*.sdb
