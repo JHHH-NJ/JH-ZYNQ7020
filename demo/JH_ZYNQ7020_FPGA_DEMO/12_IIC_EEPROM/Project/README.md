@@ -15,10 +15,10 @@ JH-ZYNQ7020-F V1.0 IIC EEPROM 示例，Vivado 2023.1，器件 `xc7z020clg484-2`�
 
 - 本例在 PL 侧驱动外接 AT24C64：SCL 接 40PIN IO1_N（W12），SDA 接 IO1_P（V12），模块与开发板共地。
 - 板载 AT24C256C 接 PS I2C0（MIO14/SCL、MIO15/SDA），不由本例 PL RTL 直接驱动。
-- W12/V12 属于可调 Bank13。`PHY_Pin.xdc` 已分配管脚，但暂不指定 I/O 标准；先实测 VCC_ADJ2，再启用与实测电压相符的 `IOSTANDARD`。
+- W12/V12 属于可调 Bank13。根据 2026-11-19 用户提供的实测 VCC_ADJ2 为 3.3 V，`PHY_Pin.xdc` 设置为 `LVCMOS33`；其他板卡或调整 RA 后应重新核实电压。
 - `Timing_Constraint.xdc` 只约束 50 MHz 主时钟。RTL 分频生成的 `dri_clk` 尚无经综合网表核验的 generated-clock 约束，本工程不作为时序签核依据。
 - `Debug.xdc` 配置 ILA 观察地址、读写数据、应答与完成标志，采样时钟为 `sys_clk`。
-- `Bit` 目录目前没有 JH 位流；未从 RK 参考工程复制 `.bit`、`.bin` 或 `.ltx`。
+- `Bit` 目录包含 Vivado 2023.1 根据本工程生成的 JH 位流及配套 ILA 探针文件。
 
 ## 仿真范围
 

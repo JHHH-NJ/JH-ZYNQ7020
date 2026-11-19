@@ -10,10 +10,10 @@ set_property IOSTANDARD LVCMOS33 [get_ports sys_rst_n]
 set_property PACKAGE_PIN W12 [get_ports iic_scl]
 set_property PACKAGE_PIN V12 [get_ports iic_sda]
 
-# Bank13 VCC_ADJ2 must be measured before selecting the bus I/O standard.
-# If the physical voltage is confirmed as 3.3 V, enable these lines:
-# set_property IOSTANDARD LVCMOS33 [get_ports iic_scl]
-# set_property IOSTANDARD LVCMOS33 [get_ports iic_sda]
+# Bank13 VCC_ADJ2 measured at 3.3 V on 2026-11-19.
+# I2C ports use LVCMOS33 for the measured voltage.
+set_property IOSTANDARD LVCMOS33 [get_ports iic_scl]
+set_property IOSTANDARD LVCMOS33 [get_ports iic_sda]
 
 # PL_LED1 is active high; V15 is in fixed 3.3 V Bank33
 set_property PACKAGE_PIN V15 [get_ports led]

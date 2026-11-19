@@ -12,5 +12,6 @@
 - `10_HDMI_ColorBar`：HDMI 720p 五色彩条显示
 - `11_HDMI_Block_Move`：HDMI 方块移动实验
 - `12_IIC_EEPROM`：IIC EEPROM 示例
+- `13_UDP_STACK`：UDP/ARP 以太网回环
 
 目标板：JH-ZYNQ7020-F V1.0，器件 `XC7Z020-2CLG484I`（Vivado `PART`：`xc7z020clg484-2`），Vivado 2023.1。

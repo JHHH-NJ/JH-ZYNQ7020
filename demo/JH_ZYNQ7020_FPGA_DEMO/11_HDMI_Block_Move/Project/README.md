@@ -16,6 +16,6 @@ JH-ZYNQ7020-F V1.0 的 720p HDMI 方块移动实验，沿用 10_HDMI_ColorBar �
 - Simulation：TB_SIM_HDMI_MOVE 仿真文件。
 - Constraint：JH 板级 HDMI 引脚及调试约束。
 - Project：Vivado XPR 与 Clock Wizard XCI。
-- Bit：预留位流输出目录。未复制其他板卡的预编译位流，避免误用于 JH 管脚。
+- Bit：Vivado 2023.1 从本工程生成的 JH 板位流及配套 ILA 探针文件。
 
-本例没有打包 Vivado 缓存、综合/实现运行目录或仿真生成文件；Bit 目录目前只有说明文件。打开 XPR 后按需生成 IP 输出产品和位流。
+本例没有打包 Vivado 缓存、综合/实现运行目录或仿真生成文件。2026-11-19 使用隔离副本完成综合、实现和位流生成；当前约束下 WNS 7.677 ns、WHS 0.048 ns。报告存在 I/O 延迟缺失及 DRC 警告，未做完整时序签核或本次上板测试。

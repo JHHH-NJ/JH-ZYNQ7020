@@ -3,4 +3,4 @@
 
 ## FPGA 示例工程
 
-JH-ZYNQ7020-F V1.0 开发板的 12 个 FPGA 示例工程（含源码、约束、Vivado 工程、IP 配置、仿真文件及位流）位于 [demo/JH_ZYNQ7020_FPGA_DEMO](demo/JH_ZYNQ7020_FPGA_DEMO/README.md)。
+JH-ZYNQ7020-F V1.0 开发板的 13 个 FPGA 示例工程（含源码、约束、Vivado 工程、IP 配置、仿真文件及位流）位于 [demo/JH_ZYNQ7020_FPGA_DEMO](demo/JH_ZYNQ7020_FPGA_DEMO/README.md)。
