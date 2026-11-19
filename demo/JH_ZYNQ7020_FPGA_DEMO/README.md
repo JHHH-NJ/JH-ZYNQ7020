@@ -10,5 +10,7 @@
 - `08_UART_LOOPBACK`：UART 串口环回（115200、8N1）
 - `09_RS485`：RS-485 半双工数据回传
 - `10_HDMI_ColorBar`：HDMI 720p 五色彩条显示
+- `11_HDMI_Block_Move`：HDMI 方块移动实验
+- `12_IIC_EEPROM`：IIC EEPROM 示例
 
 目标板：JH-ZYNQ7020-F V1.0，器件 `XC7Z020-2CLG484I`（Vivado `PART`：`xc7z020clg484-2`），Vivado 2023.1。
